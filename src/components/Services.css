@@ -1,0 +1,25 @@
+.services{
+    padding: 3rem;
+    background:#ffffff;
+    text-align: center;
+}
+
+.service-cards{
+    display: flex;
+    justify-content: center;
+    gap:2rem;
+    flex-wrap: wrap;
+}
+
+.card{
+    background: #f1f5f9;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 280px;
+    transition: all 0.3s ease;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
