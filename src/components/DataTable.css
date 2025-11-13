@@ -1,0 +1,33 @@
+.data-section {
+    padding: 3rem 2rem;
+    text-align: center;
+    background: #fafafa;
+  }
+  
+  .data-table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+  }
+  
+  .data-table th,
+  .data-table td {
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+    font-size: 0.95rem;
+  }
+  
+  .data-table th {
+    background: #ff5a5f;
+    color: white;
+    font-weight: 600;
+  }
+  
+  .data-table tr:hover {
+    background: #fdf2f2;
+  }
+  

@@ -1,26 +1,28 @@
-import React, { useState } from "react";
+import React from "react";
 import "./HeroSection.css";
-import ModalForm from "./ModalForm";
 
-const HeroSection=()=>{
-    const[showModal, setShowModal]=useState(false);
-    return(
-        <section className="hero" id="home">
-            <div className="hero-content">
-                <h1>Organize. Achieve. Relax.</h1>
-                <p>
-                Grow your productivity with Osumare’s smart task management tools.
-                </p>
-                <button className="btn" onClick={()=>setShowModal(true)}>
-                    Get Organizing
-                </button>
-            </div>
+const HeroSection = ({ onOpenModal }) => {
+  return (
+    <section className="hero-section">
+      <div className="hero-container">
+        <div className="hero-text">
+          <h1>Simplify Your Life with Our To-Do App</h1>
+          <p>
+            Stay organized and boost your productivity with our intuitive task
+            management tools. Experience a smarter way to achieve your goals.
+          </p>
+          <div className="hero-buttons">
+            <button className="btn-primary" onClick={onOpenModal}>
+              Get Started
+            </button>
+            <button className="btn-outline">Learn More</button>
+          </div>
+        </div>
+
         
-             <div className="hero-image">
-                 <img src="/assets/hero.png" alt="Marketing Illustartion"/>
-             </div>
-        <ModalForm show={showModal} onClose={()=>setShowModal(false)}/>
-        </section>
-    );
+      </div>
+    </section>
+  );
 };
+
 export default HeroSection;

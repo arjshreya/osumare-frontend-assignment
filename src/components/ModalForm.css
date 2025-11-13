@@ -1,39 +1,222 @@
-.modal-overlay{
+
+.modal-overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background:rgba(0,0,0,0.5) ;
+    background: rgba(0, 0, 0, 0.55);
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.modal-content{
-    background:white ;
-    padding: 2rem;
-    border-radius: 10px;
-    width: 350px;
-    text-align: center;
+    z-index: 999;
+  }
+  
+  
+  .modal-content {
+    background: #fff;
+    padding: 2.5rem;
+    border-radius: 16px;
+    width: 420px;
+    max-width: 90%;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
     position: relative;
-}
-.modal-content input{
-    width: 100%;
-    margin:0.5rem 0;
-    padding: 0.7rem;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-.close-btn{
+    font-family: "Poppins", sans-serif;
+    animation: scaleIn 0.3s ease;
+  }
+  
+  
+  @keyframes scaleIn {
+    from {
+      transform: scale(0.9);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+
+  .close-btn {
     position: absolute;
     top: 10px;
     right: 15px;
     border: none;
     background: transparent;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
+    color: #444;
     cursor: pointer;
-}
-.thank-you{
-    padding: 1rem;
+    transition: 0.2s;
+  }
+  .close-btn:hover {
     color: #ff5a5f;
-}
+  }
+  
+  
+  .modal-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1e1e1e;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+  
+  .modal-subtitle {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #777;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  
+  form {
+    margin-top: 1rem;
+  }
+  
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap; 
+  }
+  
+  .form-field {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-width: 160px;
+  }
+  
+  .form-field label,
+  .field-label {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #222;
+    margin-bottom: 0.3rem;
+  }
+  
+
+  input[type="text"],
+  input[type="email"] {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.2s, box-shadow 0.2s;
+    box-sizing: border-box;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus {
+    border-color: #ff5a5f;
+    box-shadow: 0 0 5px rgba(255, 90, 95, 0.3);
+  }
+  
+  
+  .form-group {
+    margin: 1.2rem 0;
+  }
+  
+  .gender-options,
+  .language-options {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 0.4rem;
+  }
+  
+  .gender-options label,
+  .language-options label {
+    font-weight: 500;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+  }
+  
+  input[type="radio"],
+  input[type="checkbox"] {
+    accent-color: #ff5a5f;
+    cursor: pointer;
+  }
+  
+  
+  .agree {
+    margin-top: 1rem;
+  }
+  
+  .agree label {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.9rem;
+    color: #333;
+  }
+  
+  .agree a {
+    color: #ff5a5f;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .agree a:hover {
+    text-decoration: underline;
+  }
+  
+ 
+  .btn-submit {
+    width: 100%;
+    background: #ff5a5f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.9rem 1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 1rem;
+  }
+  .btn-submit:hover {
+    background: #e14b50;
+  }
+  
+
+  .thank-you {
+    text-align: center;
+    padding: 2rem;
+    color: #ff5a5f;
+  }
+  
+  .thank-you h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .thank-you p {
+    color: #555;
+    font-size: 1rem;
+  }
+  
+ 
+  @media (max-width: 500px) {
+    .modal-content {
+      width: 90%;
+      padding: 2rem;
+    }
+  
+    .form-row {
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+  
+    .form-field {
+      width: 100%;
+    }
+  }
+  

@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+#  doList - Productivity Landing Page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive landing page built with React.js for the Osumare Frontend Internship Assignment.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+##  Overview
 
-### `npm start`
+doList helps users organize their tasks, boost productivity, and achieve goals efficiently.  
+The landing page design is inspired by the given Figma reference, featuring a sleek, user-friendly layout that aligns perfectly with modern UI/UX standards.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🎨 Features
 
-### `npm test`
+-  **Responsive Layout** – Adapts beautifully across desktop, tablet, and mobile screens.  
+-  **Interactive Hero & Feature Sections** – Engaging visuals and CTAs to attract users.  
+-  **Modal Form** – Collects user details like name, gender, and languages with a clean form layout.  
+-  **Dynamic Data Table** – Displays submitted form entries in real time.  
+-  **Testimonials Section** – Highlights user satisfaction and trust.  
+-  **Start Organizing Section** – Motivational call-to-action to encourage user engagement.  
+- **Footer with Resources & Social Links** – Includes useful links, resources, and connect-with-us options.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+##  Technologies Used
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- React.js – Frontend framework  
+- CSS3 – Styling and responsiveness  
+- React Icons / Local Assets – Social icons and brand visuals  
+- Modern Flexbox & Grid Layouts – For responsive structure
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+##  Setup Instructions
 
-### `npm run eject`
+To run this project locally:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Clone this repository
+git clone https://github.com/arjshreya/osumare-frontend-assignment.git
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Navigate to project directory
+cd osumare-frontend-assignment
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Install dependencies
+npm install
 
-## Learn More
+# Start the development server
+npm start
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Then open your browser and go to -
+http://localhost:3000
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Build for Production
 
-### Code Splitting
+To generate an optimized build for deployment:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+npm run build
 
-### Analyzing the Bundle Size
+Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+ This project can be deployed easily on Vercel, Netlify, or GitHub Pages.
 
-### Making a Progressive Web App
+Author
+Shreya Arjugade
+ GitHub: arjshreya
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Email: arjshreya1625@gmail.com

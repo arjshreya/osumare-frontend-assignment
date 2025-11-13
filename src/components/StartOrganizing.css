@@ -1,0 +1,128 @@
+.start-section {
+    background: #ffffff;
+    font-family: "Poppins", sans-serif;
+    padding: 5rem 8rem;
+  }
+  
+  .start-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    flex-wrap: wrap;
+  }
+  
+ 
+  .start-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .start-image img {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+ 
+  .start-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .start-content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1e1e1e;
+  }
+  
+  .start-content p {
+    color: #555;
+    font-size: 1.1rem;
+    max-width: 480px;
+  }
+  
+  .start-content span {
+    color: #ff5a5f;
+    font-weight: 600;
+  }
+  
+  
+  .start-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .btn-primary {
+    background: #ff5a5f;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 0.8rem 1.6rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background: #e14b50;
+  }
+  
+  .btn-outline {
+    background: transparent;
+    color: #ff5a5f;
+    border: 2px solid #ff5a5f;
+    border-radius: 25px;
+    padding: 0.8rem 1.6rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .btn-outline:hover {
+    background: #ff5a5f;
+    color: #fff;
+  }
+  
+  
+  @media (max-width: 1024px) {
+    .start-section {
+      padding: 4rem 3rem;
+    }
+  
+    .start-content h2 {
+      font-size: 2rem;
+    }
+  
+    .start-image img {
+      max-width: 350px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .start-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .start-content {
+      align-items: center;
+    }
+  
+    .start-content p {
+      max-width: 100%;
+    }
+  
+    .start-buttons {
+      justify-content: center;
+    }
+  }
+  
